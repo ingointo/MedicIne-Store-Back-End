@@ -1,0 +1,30 @@
+extends mdb
+
+block content
+
+  .container.py-5.h-100
+    .row.d-flex.justify-content-center.align-items-center.h-100
+      .col.col-xl-10
+        .card(style='border-radius: 1rem;')
+          .row.g-0
+            .col-md-6.col-lg-5.d-none.d-md-block
+              img.img-fluid(src='/images/login-pharmacy.jpg' alt='login form' style='border-radius: 1rem 0 0 1rem;')
+            .col-md-6.col-lg-7.d-flex.align-items-center
+              .card-body.p-4.p-lg-5.text-black
+                form(method='post' action='/login')
+                  .d-flex.align-items-center.mb-3.pb-1
+                    i.fas.fa-cubes.fa-2x.me-3(style='color: #ff6219;')
+                    span.h1.fw-bold.mb-0 MediCare
+                  h5.fw-normal.mb-3.pb-3(style='letter-spacing: 1px;') Sign into your account
+                  .form-outline
+                    label User Name
+                    input#form2Example17.form-control.form-control-lg(type='text' name='username' )
+                    label Password
+                    input#form2Example27.form-control.form-control-lg(type='password' name='password' )
+                  .pt-1.mb-4
+                    button.btn.btn-dark.btn-lg.btn-block(type='submit' value='login') Login
+                  a.small.text-muted(href='#!') Forgot password?
+                  p.mb-5.pb-lg-2(style='color: #393f81;')
+                    | Don&apos;t have an account? 
+                    a(href='/user/signup' style='color: #393f81;') Register here
+                 

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+ 
+  h1 #{title}
+ 
+  if medicines.length > 0
+    ul
+      each medicine in medicines
+        li.name= medicine.name
+          p.details= "Details: " + medicine.details
+          p.price= "Price: " + medicine.price
+  else
+    p No matching medicines found.
+  
+  a.btn.btn-primary.btn-style2(href='/search') Reset

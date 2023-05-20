@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    .container.white-text(style="font-family: 'Courier New', Courier, monospace;")
+        .badge.bg-danger.fs-2.h1 #{title}
+        form(method='POST', action='/medicines/edit/'+medicine._id)
+            #form-group
+                label Name
+                input.form-control(name='name', type='text', value=medicine.name)
+            #form-group
+                label Price
+                input.form-control(name='price', type='text', value=medicine.price)
+            #form-group
+                label Details
+                textarea.form-control(name='details').value=medicine.details
+
+            input.btn.btn-primary.mt-3(type='submit', value='submit')
+            
+
+
+       

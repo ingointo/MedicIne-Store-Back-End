@@ -1,0 +1,34 @@
+extends layout
+
+block content
+
+ .container(style="font-family: 'Courier New', Courier, monospace;")
+  .badge.bg-info.fs-2(style="width: 35rem; height:3rem; letter-spacing:-5px; font-family: 'Courier New', Courier, monospace;")
+    | A d d M e d i c i n e
+  .w-auto
+    form(action='/add' method='post')
+      .form-row
+        .mb-3.mt-2
+          label.input-group-text.bg-primary.text-bg-dark.w-30.fw-semibold(for='validationCustom01')
+            | M e d i c i n e N a m e
+          input#validationCustom01.form-control(type='text' placeholder='P r o d u c t N a m e'  name='name' required='')
+          
+        .mb-3
+          
+        .col-md-6.mb-3.input-group-text
+          label.input-group-text.bg-primary.text-bg-dark.fw-semibold(for='validationCustom03')
+            | M e d i c i n e P r i c e
+            | &#x20B9;
+          .input-group-text
+            span.badge.text-bg-danger $
+          input#validationCustom03.form-control(type='text' style='display: inline;' aria-label='Amount (to the nearest dollar, indian rupee)' value='' name='price' required='' placeholder=' P r o d u c t P r i c e ₹')
+          .input-group-text
+            span.badge.text-bg-danger .00
+        .mb-3
+          label.input-group-text.bg-primary.text-bg-dark.w-30.fw-semibold(for='validationCustom04')
+            | M e d i c i n e D e s c r i p t i o n
+          textarea.form-control(aria-label='Description' placeholder='M e d i c i n e  D e s c r i p t i o n' name='details' required='')
+        .mb-3
+        
+      button.btn.btn-danger(type='submit') A d d M e d i c i n e
+  

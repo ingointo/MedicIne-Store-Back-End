@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    // Font Awesome
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' rel='stylesheet')
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap' rel='stylesheet')
+    // MDB
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css' rel='stylesheet')
+   
+
+  body
+   .container
+            nav.navbar.navbar-expand-md.nav-col.rounded-3.fixed-top
+                a.navbar.header(href='/') P h a r m a c y
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar', aria-controls='navbar', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbar.collapse.navbar-collapse
+                    ul.navbar-nav.mr-auto
+                        li.nav-item.mx-3
+                            a.btn.nav-link(href='/') Home
+                          
+                        li.nav-item.mx-3
+                            a.btn.btn-outline.nav-link(href='/add') Add Medicine
+                        li.nav-item.mx-3
+                            a.btn.nav-link(href='/logout') Logout
+        .container
+            br
+            br
+            br
+            != messages('message', locals)
+            if errors
+                each error in errors
+                    div(class='alert alert-danger') #{error.msg}
+    block content
+     script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js')
+     

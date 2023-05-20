@@ -1,0 +1,12 @@
+extend layout
+
+block content
+    h1.white-text= medicine.name
+    h5.white-text Medicine Detail: #{medicine.details}
+    p.white-text Medicine Price: #{medicine.price}
+    hr
+    a.btn.btn-info(href='/medicines/edit/'+medicine._id) Edit
+    a.btn.mx-3.btn-danger(href='/medicines/delete/' + medicine._id, onclick="return confirm('Are you sure you want to delete this medicine?')") Delete
+
+    
+   

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+
+ a.btn.btn-primary.btn-style(href='/search') Search
+ h1.med-header #{title}
+    ul.list-group
+        each medicine, i in medicines
+            li.list-group-item 
+              a(href="/medicines/"+medicine._id)= medicine.name 
+            
+ 

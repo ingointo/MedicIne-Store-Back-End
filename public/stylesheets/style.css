@@ -1,0 +1,78 @@
+body {
+  padding: 50px;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/56/325/305/dark-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+a {
+  color: #00B7FF;
+}
+/*====================== header style ==============*/
+.text-style {
+  font-family: 'Courier New', Courier, monospace; font-weight: bolder;
+}
+.nav-col{
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+  height: 95px;
+}
+*{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+}
+tbody{
+  font-size: 30px;
+}
+.btn-style{
+  float: right;
+  margin-bottom: 3px;
+}
+
+.btn-style2{
+  float: inline-start;
+  width: 25%;
+ 
+}
+.name{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-weight: bold;
+}
+.details{
+  font-size: 25px;
+  color:firebrick;
+}
+.price{
+  font-size: 25px;
+  color:firebrick;
+}
+
+.inp-style{
+  width: 30%;
+
+}
+
+.nav-item{
+  background-color: white;
+  border-radius: 10px;
+}
+
+.nav-item:hover{ 
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+  border-radius: 10px;
+}
+.header{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.med-header{
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+.white-text{
+  color: white;
+}

@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1.mb-5  #{title}
+
+  form(action="/search/data", method="get")
+    input.inp-style(type="text", name="query", placeholder="Enter Medicine Name")
+    button.btn.mx-3.btn-primary(type="submit") Search

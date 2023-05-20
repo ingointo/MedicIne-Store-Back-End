@@ -1,0 +1,33 @@
+extends mdb 
+
+block content
+    .row.d-flex.justify-content-center.align-items-center.h-100
+      .col-lg-12.col-xl-11   
+            .row.justify-content-center.text-black
+              .col-md-10.col-lg-6.col-xl-5.order-2.order-lg-1
+                p.text-center.h1.fw-bold.mb-5.mx-1.mx-md-4.mt-4 Sign up
+                form.mx-1.mx-md-4(method='post' action='/user/signup')
+                  .d-flex.flex-row.align-items-center.mb-4
+                    i.fas.fa-user.fa-lg.me-3.fa-fw
+                    .form-outline.flex-fill.mb-0
+                      label User Name
+                      input#form3Example1c.form-control(type='text' name='username')
+                  //- .d-flex.flex-row.align-items-center.mb-4
+                  //-   i.fas.fa-envelope.fa-lg.me-3.fa-fw
+                  //-   .form-outline.flex-fill.mb-0
+                  //-     input#form3Example3c.form-control(type='email' name='email')
+                  //-     label.form-label(for='form3Example3c') Your Email
+                  .d-flex.flex-row.align-items-center.mb-4
+                    i.fas.fa-lock.fa-lg.me-3.fa-fw
+                    .form-outline.flex-fill.mb-0
+                      label Password
+                      input#form3Example4c.form-control(type='password' name='password')
+                  //- .form-check.d-flex.justify-content-center.mb-5
+                  //-   input#form2Example3c.form-check-input.me-2(type='checkbox' value='')
+                  //-   label.form-check-label(for='form2Example3')
+                  //-     | I agree all statements in 
+                  //-     a(href='#!') Terms of service
+                  .d-flex.justify-content-center.mx-4.mb-3.mb-lg-4
+                    button.btn.btn-primary.btn-lg(type='submit') Register
+              .col-md-10.col-lg-6.col-xl-7.d-flex.align-items-center.order-1.order-lg-2
+                img.img-fluid(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp' alt='Sample image')
